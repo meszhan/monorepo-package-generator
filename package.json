@@ -1,0 +1,26 @@
+{
+  "name": "monorepo-package-generator",
+  "version": "1.0.0",
+  "description": "monorepo开发模式下代码生成package",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm run clean && pnpm run prod",
+    "pub": "npm version patch && npm publish",
+    "dev": "tsc -w",
+    "prod": "tsc",
+    "clean": "rimraf dist"
+  },
+  "keywords": ["monorepo"],
+  "author": "zhiguozhan",
+  "devDependencies": {
+    "@types/node": "^13.9.8",
+    "jest": "^25.2.4",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.3.0",
+    "typescript": "^3.8.3"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meszhan/monorepo-package-generator/issues"
+  }
+}
